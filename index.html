@@ -228,10 +228,10 @@
                                     <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-lg mb-3">
                                         <h4 className="font-bold text-emerald-900 mb-2 text-sm">Performance by Dataset:</h4>
                                         <div className="space-y-2 text-sm text-slate-700">
+                                            <p><strong>MEDDOCAN:</strong> spaCy reaches 0.770 F1, with possible data leakage influencing results.</p>
                                             <p><strong>SPG (Synthetic):</strong> spaCy achieves 0.880 F1, showing strong performance in controlled data.</p>
                                             <p><strong>Extended SPG:</strong> spaCy (0.675) and Llama 3.1 (0.674) perform similarly, likely due to Llama-generated data.</p>
-                                            <p><strong>MEDDOCAN:</strong> spaCy reaches 0.770 F1, with possible data leakage influencing results.</p>
-                                            <p><strong>CARMEN-I (Natural):</strong> spaCy obtains 0.657 F1, while REGEX drops to 0.001, highlighting poor generalization.</p>
+                                            <p><strong>CARMEN-I (Natural):</strong> spaCy obtains 0.657 F1, while REGEX drops to 0.001, highlighting poor generalization and Llama 3.1. performs worse than any BiLSTM approach, below 10%.</p>
                                         </div>
                                     </div>
 
@@ -257,8 +257,7 @@
                                         </p>
 
                                         <p>
-                                            <strong>spaCy</strong> emerges as the best overall approach, likely due to its richer internal representations and 
-                                            end-to-end training tailored to each dataset.
+                                            <strong>spaCy</strong>, an off-the-shelf BiLSTM approach, emerges as the best overall approach, likely due to its richer internal representations and end-to-end training tailored to each dataset.
                                         </p>
 
                                         <p>
@@ -287,7 +286,7 @@
                                         <div className="bg-emerald-50 rounded-lg p-4 border border-emerald-200">
                                             <h3 className="font-bold text-emerald-900 mb-2">spaCy: Industrial NLP Toolkit</h3>
                                             <p className="text-emerald-700 text-sm">
-                                                Superior architecture and end-to-end training tailored to each dataset. Highest F1 scores across all datasets.
+                                                Superior BiLSTM architecture and end-to-end training tailored to each dataset. Highest F1 scores across all datasets.
                                             </p>
                                         </div>
 
